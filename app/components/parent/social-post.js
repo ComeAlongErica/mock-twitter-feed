@@ -33,7 +33,8 @@ const socialPost = {
   };
 
     vm.removePost = (index) => {
-      console.log("fix the index");
+      let remove = vm.posts.indexOf(index);
+      vm.posts.splice(remove, 1);
   }
 
   }]
