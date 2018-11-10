@@ -1,25 +1,29 @@
 "use strict";
+
 function expandOnFocus() {
-  // Directives must return an object
   return {
-    // Restricting this directive to be used as an attribute
     restrict: "A",
-    // Link allows us to do any sort've manipulation to the element we want...most commonly is DOM manipulation
     link: function($scope, $element, $attrs) {
-      // When you click on the element...
-      $element.on("click", () => {
+      $element.on("focus", () => {
         // If the element's sibling is a paragraph...
-        if ($element[0].previousElementSibling.tagName === "P") {
+        if ($element[0].tagName === "INPUT" || $element[0].tagName === "TEXTAREA") {
           // The element's sibling now has a green color
-          $element[0].previousElementSibling.style.color = "green";
+          $element[0].style.padding = "5px 0";
+          console.log("focused");
         }
-        // The element you clicked on turns red
-        $element.css("color", "red");
+      });
+      $element.on("blur", () => {
+        // If the element's sibling is a paragraph...
+        if ($element[0].tagName === "INPUT" || $element[0].tagName === "TEXTAREA") {
+          // The element's sibling now has a green color
+          $element[0].style.padding = "";
+          console.log("focused");
+        }
       });
     }
   };
 }
 
 angular
-  .module("App")
-  .directive("hover", hover);
+  .module("SocialApp")
+  .directive("expandOnFocus", expandOnFocus);

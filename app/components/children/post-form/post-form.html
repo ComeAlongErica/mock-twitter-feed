@@ -1,9 +1,9 @@
 <form>
     <h2>Title</h2>
-    <input ng-model="newPost.title" type="text" placeholder="   Post title">
+    <input expand-on-focus ng-model="newPost.title" type="text" placeholder="   Post title">
 
     <h2>Thought</h2>
-    <textarea ng-model="newPost.post"></textarea>
+    <textarea expand-on-focus ng-model="newPost.post"></textarea>
 
     <button ng-click="$ctrl.addPost({ postToAdd: newPost });">Add Post</button>
 </form>
