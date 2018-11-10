@@ -5,11 +5,11 @@ const socialPost = {
   controller: [function () {
     const vm = this;
     vm.posts = [
-      { title: "title1", post: "lorem lorem lorem lorem lorem loremlorem lorem lorem lorem lorem loremlorem lorem lorem lorem lorem loremlorem lorem lorem lorem lorem lorem" },
-      { title: "title2", post: "lorem lorem lorem lorem lorem loremlorem lorem lorem lorem lorem loremlorem lorem lorem lorem lorem loremlorem lorem lorem lorem lorem lorem" },
-      { title: "title3", post: "lorem lorem lorem lorem lorem loremlorem lorem lorem lorem lorem loremlorem lorem lorem lorem lorem loremlorem lorem lorem lorem lorem lorem" },
-      { title: "title4", post: "lorem lorem lorem lorem lorem loremlorem lorem lorem lorem lorem loremlorem lorem lorem lorem lorem loremlorem lorem lorem lorem lorem lorem" },
-      { title: "title5", post: "lorem lorem lorem lorem lorem loremlorem lorem lorem lorem lorem loremlorem lorem lorem lorem lorem loremlorem lorem lorem lorem lorem lorem" },
+      { title: "Playing Fetch", post: "I had a long talk with my fren about how to spot a fake ball throw. The optimal strategy is to follow the ball with your eyes instead of your heart." },
+      { title: "Nightmare", post: "One time I was having a nightmare and the human noticed. They held my paw to make sure i knew everything was going to be okay." },
+      { title: "Gardens", post: "Over the summer the human tried to grow tomatoes in the backyard. Every so often I would sneak over and graze on them like a brontosaurus." },
+      { title: "Couches", post: "I like to sit on one side of the couch, but sometimes I sit on the other side of the couch. just to keep everyone on their toes." },
+      { title: "Doggo Love", post: "If you don’t mind, I’m gonna love you a whole lot." },
     ]
 
     vm.formDisplay = false;
