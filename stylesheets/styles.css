@@ -69,6 +69,7 @@ input, textarea {
     border: 1px solid black;
     border-radius: 5px;
     font-family: 'Dosis', sans-serif;
+    font-size: 15px;
 }
 
 input[type=text] {
@@ -105,14 +106,3 @@ button:hover {
     color: white;
     cursor: pointer;
 }
-
-/* The starting CSS styles for the enter animation */
-.fade.ng-enter {
-    transition:0.5s linear all;
-    opacity:0;
-  }
-  
-  /* The finishing CSS styles for the enter animation */
-  .fade.ng-enter.ng-enter-active {
-    opacity:1;
-  }
