@@ -1,2 +1,2 @@
 "use strict";
-angular.module("SocialApp", ["ngAnimate"]); 
+angular.module("SocialApp", []); 
