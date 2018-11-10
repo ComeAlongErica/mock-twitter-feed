@@ -1,7 +1,7 @@
 <h1>My Thoughts</h1>
 <button ng-click="$ctrl.showForm();" ng-class="{'show': $ctrl.formDisplay != true, 'hide': $ctrl.formDisplay != false}">New Thought</button>
 <section ng-class="{'show': $ctrl.formDisplay === true, 'hide': $ctrl.formDisplay === false}">
-    <post-form></post-form>
+    <post-form add-post="$ctrl.addPost(postToAdd);"></post-form>
 </section>
 <section class="posts">
     <post class="post" post="post" remove-post="$ctrl.removePost(index);" ng-repeat="post in $ctrl.posts"></post>

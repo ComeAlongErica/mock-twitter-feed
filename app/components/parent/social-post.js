@@ -22,6 +22,16 @@ const socialPost = {
       };
     }
 
+    vm.addPost = (postToAdd) => {
+      if (vm.formDisplay === false) {
+        vm.formDisplay = true
+      } else {
+        vm.formDisplay = false
+      };
+
+      vm.posts.push(postToAdd);
+  };
+
     vm.removePost = (index) => {
       console.log("fix the index");
   }

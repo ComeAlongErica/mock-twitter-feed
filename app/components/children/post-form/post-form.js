@@ -1,15 +1,10 @@
 "use strict";
 const postForm = {
   templateUrl: "app/components/children/post-form/post-form.html",
-  bindings: {
-  },
+  bindings: { addPost: "&" },
   controller: [function() {
     const vm = this;
-    
-    vm.onSubmit = (postInfo) => {
-      console.log("clicked");
-      vm.updatePost(postInfo);
-    }
+
 
   }]
 
