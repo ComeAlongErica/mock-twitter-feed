@@ -5,11 +5,11 @@ const socialPost = {
   controller: [function () {
     const vm = this;
     vm.posts = [
-      { title: "title", post: "lorem lorem lorem lorem lorem loremlorem lorem lorem lorem lorem loremlorem lorem lorem lorem lorem loremlorem lorem lorem lorem lorem lorem" },
-      { title: "title", post: "lorem lorem lorem lorem lorem loremlorem lorem lorem lorem lorem loremlorem lorem lorem lorem lorem loremlorem lorem lorem lorem lorem lorem" },
-      { title: "title", post: "lorem lorem lorem lorem lorem loremlorem lorem lorem lorem lorem loremlorem lorem lorem lorem lorem loremlorem lorem lorem lorem lorem lorem" },
-      { title: "title", post: "lorem lorem lorem lorem lorem loremlorem lorem lorem lorem lorem loremlorem lorem lorem lorem lorem loremlorem lorem lorem lorem lorem lorem" },
-      { title: "title", post: "lorem lorem lorem lorem lorem loremlorem lorem lorem lorem lorem loremlorem lorem lorem lorem lorem loremlorem lorem lorem lorem lorem lorem" },
+      { title: "title1", post: "lorem lorem lorem lorem lorem loremlorem lorem lorem lorem lorem loremlorem lorem lorem lorem lorem loremlorem lorem lorem lorem lorem lorem" },
+      { title: "title2", post: "lorem lorem lorem lorem lorem loremlorem lorem lorem lorem lorem loremlorem lorem lorem lorem lorem loremlorem lorem lorem lorem lorem lorem" },
+      { title: "title3", post: "lorem lorem lorem lorem lorem loremlorem lorem lorem lorem lorem loremlorem lorem lorem lorem lorem loremlorem lorem lorem lorem lorem lorem" },
+      { title: "title4", post: "lorem lorem lorem lorem lorem loremlorem lorem lorem lorem lorem loremlorem lorem lorem lorem lorem loremlorem lorem lorem lorem lorem lorem" },
+      { title: "title5", post: "lorem lorem lorem lorem lorem loremlorem lorem lorem lorem lorem loremlorem lorem lorem lorem lorem loremlorem lorem lorem lorem lorem lorem" },
     ]
 
     vm.formDisplay = false;
@@ -21,6 +21,10 @@ const socialPost = {
         vm.formDisplay = false
       };
     }
+
+    vm.removePost = (index) => {
+      console.log("fix the index");
+  }
 
   }]
 };

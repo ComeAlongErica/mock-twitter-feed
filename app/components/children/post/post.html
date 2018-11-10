@@ -1,5 +1,5 @@
 <h2> {{ $ctrl.post.title }} </h2>
-<i class="fas fa-times"></i>
+<i ng-click="$ctrl.removePost($index);" class="fas fa-times"></i>
 <p class="post-text">{{$ctrl.post.post}}</p>
 
 

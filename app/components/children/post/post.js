@@ -1,7 +1,7 @@
 "use strict";
 const post = {
   templateUrl: "app/components/children/post/post.html",
-  bindings: { post: "<" },
+  bindings: { post: "<", removePost: "&" },
   controller: [function() {
     const vm = this;
     

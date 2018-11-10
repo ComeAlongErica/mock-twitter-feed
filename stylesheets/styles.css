@@ -33,6 +33,12 @@ i {
     position: absolute;
     right: 45px;
     font-size: 20px;
+    margin-left: 15px;
+}
+
+i:hover {
+    color: rgb(3, 169, 244);
+    cursor: pointer;
 }
 
 /* styles form */

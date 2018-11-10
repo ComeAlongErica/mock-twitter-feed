@@ -4,5 +4,5 @@
     <post-form></post-form>
 </section>
 <section class="posts">
-    <post class="post" post="post" ng-repeat="post in $ctrl.posts"></post>
+    <post class="post" post="post" remove-post="$ctrl.removePost(index);" ng-repeat="post in $ctrl.posts"></post>
 </section>
