@@ -81,12 +81,30 @@ textarea {
 }
 
 /* form styling and button */
+/* .form {
+  transition: all linear 0.5s;
+  background-color: lightblue;
+  height: 100px;} */
+
 .hide {
- display: none;
+    display: none;
 }
 
 .show {
     display: block;
+
+}
+
+.form-hide {
+    transition:0.5s linear all;
+    height: 0px;
+    opacity:0;
+}
+
+.form-show {
+    display: block;
+    height: 450px;
+    transition:0.25s linear all;
 }
 
 button {
@@ -106,3 +124,5 @@ button:hover {
     color: white;
     cursor: pointer;
 }
+
+  
