@@ -92,19 +92,20 @@ textarea {
 
 .show {
     display: block;
-
 }
 
 .form-hide {
-    transition:0.5s linear all;
+    transition: 0.2s linear all;
     height: 0px;
-    opacity:0;
+    opacity: 0;
+    transform: scaleY(0)
 }
 
 .form-show {
     display: block;
     height: 450px;
-    transition:0.25s linear all;
+    transition: 0.25s linear all;
+    transform: scaleY(1)
 }
 
 button {
